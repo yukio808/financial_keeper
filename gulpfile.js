@@ -29,5 +29,7 @@ gulp.task('watch', function (){
     './app/views/*.jade',
     './app/controller/*.js'], refresh.changed);
 });
+
+
 gulp.task('default', ['server', 'watch', 'sass']);
-gulp.task('sassy', ['sass']);
+gulp.task('sassCompile', ['sass']);
